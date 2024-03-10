@@ -1,13 +1,11 @@
 /**
-* @name Comfy
-* @author Nyria#3863
-* @description Stay comfy while talking to your friends
-* @invite rtBQX5D3bD
+* @name ncwid_Comfy
+* @author nobodycareswhatido
+* @description ncwid fork of the comfy discord theme
 * @version 2.4
-* @donate https://ko-fi.com/nyria
 */
 
-@import "https://comfy-themes.github.io/Discord/betterdiscord/main.css";
+@import "https://raw.githubusercontent.com/nobodycareswhatido/comfy-discord-theme/master/betterdiscord/main.css";
 
 /* ═══════『 ⚠️・Important tips 』═══════
 *
@@ -20,13 +18,14 @@
 */
 
 /* ═══════『 🚫 ・ No scrollbars 』- Comment the line below if you want the scrollbar back */
-@import "https://comfy-themes.github.io/Discord/betterdiscord/no-scrollbar.css";
+/* @import "https://comfy-themes.github.io/Discord/betterdiscord/no-scrollbar.css"; */
 
 /* ═══════『 🎵 ・ Better SpotifyControls seek bar 』- Comment the line below if you don't want this spotify bar */
-@import "https://comfy-themes.github.io/Discord/betterdiscord/better-spotify.css";
+/*@import "https://comfy-themes.github.io/Discord/betterdiscord/better-spotify.css"; */
 
 /* ═══════『 🎵 ・ Vencord Spotify Plugin 』- Comment the line below if you don't want this spotify bar FOR VENCORD */
-@import "https://comfy-themes.github.io/Discord/betterdiscord/vencord-spotify.css";
+/*@import "https://comfy-themes.github.io/Discord/betterdiscord/vencord-spotify.css"; */
+
 
 :root {
   /* ═══════『 💨 ・ Animations 』- If you don't want a high CPU usage, comment the line below */
@@ -170,3 +169,18 @@
   --header-secondary: #b1b5b9;
   --text-normal: #8e9297;
 }
+
+
+/* fix vencord spotify bar height */
+:root .bar_e58961 {
+  background-color: var(--background-tertiary) !important;
+  height: 6px !important;
+}
+.barFill__30e17 {
+  height: 6px !important;
+}
+:root .sliderContainer__109be {
+  margin-bottom: -6px;
+}
+
+
