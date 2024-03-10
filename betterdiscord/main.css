@@ -1,8 +1,7 @@
-/* @import url("https://nyri4.github.io/donators/donators.css"); */
 :root .buttons__3766a {
   transition: opacity 150ms;
 }
-:root .panels__58331 > .container_ca50b9 > .avatarWrapper_ba5175 {
+/* :root .panels__58331 > .container_ca50b9 > .avatarWrapper_ba5175 {
   position: fixed;
   bottom: 26.5px;
   left: 327.5px;
@@ -10,7 +9,10 @@
   margin: 0;
   padding: 0;
   min-width: unset;
-}
+} */
+
+
+
 :root .panels__58331 > .container_ca50b9 > .avatarWrapper_ba5175 > .avatar_f8541f {
   width: 40px !important;
   height: 40px !important;
@@ -35,6 +37,16 @@
 :root .panels__58331 > .container_ca50b9 > .avatarWrapper_ba5175 > .avatar_f8541f + .nameTag__0e320 {
   display: none;
 }
+
+:root .panels__58331 > .container_ca50b9 > .avatarWrapper_ba5175 {
+    width: 40px !important;
+    padding: 2px;
+}
+[class*="withTagAsButton"] {
+    min-width: 0px !important;
+}
+
+
 :root .content__4bf10 > :nth-child(2):not(.chat__52833),
 :root .callContainer_e8faeb,
 :root .gatedContent_ba8306,
@@ -45,13 +57,13 @@
 :root .page__0b66e {
   z-index: 2;
 }
-:root .chat__52833 .form__13a2c {
+/* :root .chat__52833 .form__13a2c {
   padding-left: 66px;
-}
+} */
 :root .chat__52833 .form__13a2c .wrapper_fbbb73 {
   z-index: unset;
 }
-:root .chat__52833 .form__13a2c .channelTextArea__2e60f .scrollableContainer__33e06::after,
+/* :root .chat__52833 .form__13a2c .channelTextArea__2e60f .scrollableContainer__33e06::after,
 :root .chat__52833 .form__13a2c .wrapper_fbbb73::after {
   position: absolute;
   content: "";
@@ -61,7 +73,7 @@
   height: 40px;
   background-color: var(--background-secondary);
   border-radius: calc(var(--avatar-radius) + 2px);
-}
+} */
 :root .typing__6fd1d {
   left: 66px;
   right: 26px;
@@ -384,10 +396,10 @@
 :root .panels__58331 {
   z-index: 2;
 }
-:root .panels__58331 > .container_ca50b9 {
+/*:root .panels__58331 > .container_ca50b9 {
   height: 0;
-}
-:root .panels__58331 > .container_ca50b9 > .flex_f5fbb7 {
+}*/
+/*:root .panels__58331 > .container_ca50b9 > .flex_f5fbb7 {
   position: fixed;
   bottom: 0;
   left: 0;
@@ -395,10 +407,25 @@
   padding: 20px 0 10px 0;
   flex-direction: column;
   background: linear-gradient(transparent, var(--background-tertiary) 15%);
+} */
+:root .panels__58331 > .container_ca50b9 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
+:root .panels__58331 > .container_ca50b9 > .flex_f5fbb7 {
+  height: 100%;
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  align-items: center !important;
+}
+
+
 :root .panels__58331 > .container_ca50b9 > .flex_f5fbb7 > .button__4f306 {
   color: var(--user-buttons-color);
   margin: var(--user-buttons-spacing) auto 0 auto;
+  margin-top: 0;
 }
 :root .inner-1ilYF7 > .modal__060da > .header__6d5ea,
 :root .modal__060da,
@@ -866,6 +893,9 @@
   padding-top: 0;
   padding-bottom: 12px;
 }
+:root .userPopoutOverlayBackground_d8afa4 > .usernameSection__53868 {
+  padding-top: 12px;
+}
 :root .userPopoutOuter_d739b2 .userPopoutOverlayBackground_d8afa4 .divider__2bbbc {
   display: none;
 }
@@ -952,7 +982,7 @@
   content: "";
   position: absolute;
   height: 25px;
-  width: 284px;
+  width: 100%;
   top: -24px;
   left: 0;
   z-index: 3;
@@ -967,7 +997,7 @@
     -webkit-mask-position-x: 0;
   }
   100% {
-    -webkit-mask-position-x: 284px;
+    -webkit-mask-position-x: 100%;
   }
 }
 :root .userPopoutOuter_d739b2 .userPopoutOverlayBackground_d8afa4 .activity__20c1e .timeBarUserPopoutV2_c5b927 .barInner_d1abc6 {
@@ -1401,7 +1431,7 @@
   position: absolute;
   height: 21px;
   z-index: 2;
-  width: 284px;
+  width: 100%;
   top: -20px;
   left: 0;
   background: #7289da;
@@ -1416,7 +1446,7 @@
   position: absolute;
   height: 21px;
   z-index: 1;
-  width: 284px;
+  width: 100%;
   top: -21px;
   left: 0;
   background: var(--background-secondary);
@@ -1929,7 +1959,7 @@
   position: absolute;
   height: 25px;
   z-index: 1;
-  width: 284px;
+  width: 100%;
   top: -25px;
   left: 0;
   background: var(--background-secondary);
@@ -1941,7 +1971,7 @@
 }
 @keyframes animate2 {
   0% {
-    -webkit-mask-position-x: 284px;
+    -webkit-mask-position-x: 100%;
   }
   100% {
     -webkit-mask-position-x: 0;
@@ -1964,7 +1994,7 @@
   position: absolute;
   height: 25px;
   z-index: 2;
-  width: 284px;
+  width: 100%;
   top: -24px;
   left: 0;
   background: #7289da;
@@ -1990,7 +2020,7 @@
   content: "";
   position: absolute;
   height: 25px;
-  width: 284px;
+  width: 100%;
   top: -24px;
   left: 0;
   z-index: 3;
