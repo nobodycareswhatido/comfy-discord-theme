@@ -7,6 +7,9 @@
 
 @import "https://raw.githubusercontent.com/nobodycareswhatido/comfy-discord-theme/master/betterdiscord/main.css";
 
+
+
+
 /* ═══════『 ⚠️・Important tips 』═══════
 *
 *   ➥ To comment or uncomment a line you need to put those "/" and "*" characters as you can see at the beginning and ending of my comments.
@@ -183,4 +186,30 @@
   margin-bottom: -6px;
 }
 
+:root .userPopoutOuter_d739b2 .userPopoutOverlayBackground_d8afa4 .activity__20c1e::after {
+  width: 100%;
+}
 
+:root .typing__6fd1d {
+  left: 26px !important;
+}
+
+.accountProfilePopoutWrapper_af829a .userPopoutOuter_d739b2 > .userPopoutInner_f545a3 > .userPopoutOverlayBackground_d8afa4 > .usernameSection__53868 {
+  padding-top: 12px !important;
+}
+
+.pronouns__8bcdb::before{
+  content: "PRONOUNS \a" !important;
+  white-space: pre;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.customStatus__3aa7f::before {
+  content: "CUSTOM STATUS \a" !important;
+  white-space: pre;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 2;
+}
